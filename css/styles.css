@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--noir);
+}
+
+:root {
+    --blanc: #f6f6f6;
+    --gris: #434343;
+    --noir: #1A1A1A;
+}  
+
+body {
+    overflow-x: hidden;
+}
+
+/* -- header -- */
+
+header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url("../img/img_arriere_plan/Space_sky_01.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+    text-align: center;
+    color: var(--blanc);
+}
+header h1 {
+    font-size: clamp(24px, 5vh, 42px);
+    padding: 30px;
+    padding-top: 70px;
+}
+header div {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding: 30px;
+}
+
+/* -- appel -- */
+
+.appel {
+    position: absolute;
+    width: 100%;
+    bottom: 60px;
+}
+.appel .fleche {
+    position: absolute;
+    height: 8vh;
+    width: 8vh;
+    transform: translateX(-50%);
+}
+.appel .fleche.un {
+    bottom: 1vh;
+}
+.appel .fleche.deux {
+    bottom: 3vh;
+}
+.appel .fleche.trois {
+    bottom: 5vh;
+}
+
+/* -- main chapitre -- */
+
+.chapt {
+    position: relative;
+    height: 100vh;
+    aspect-ratio: 16/9;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#chapitre-1 {
+    background-image: url("../img/img_arriere_plan/blue-sky_01.png");
+    background-size: auto 100%;
+}
+#chapitre-2 {
+    background-image: url("../img/img_arriere_plan/blue-sky_01.png" );
+    background-size: auto 100%;
+}
+#chapitre-3 {
+    background-image: url("../img/img_arriere_plan/Weather_sky_01.png" );
+    background-size: auto 100%;
+}
+    /*pas besoin de background pour le chapitre 4-5 il sont un peu special*/
+#chapitre-6 {
+    background-image: url("../img/img_arriere_plan/Space_sky_01.png" );
+    background-size: auto 100%;
+}
+
+/* -- spritesheettest -- */
+
+.spritearray {
+    height: 200vh;
+}
+
+.sprite {
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-image: url("../img/img_elements_visuels/plui_sprite-sheet.png");
+    background-size: cover;
+    background-position: 0 0;
+    animation-name: marche;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+     animation-timing-function: steps(8);
+}
+@keyframes marche {
+    from { background-position: 0 0; }
+    to { background-position: 800% 0; } 
+  }
+
+  .sprite2 {
+    width: 25%;
+    aspect-ratio: 9/16;
+    background-image: url("../img/img_personnages/fusee-spritesheet.png");
+    background-size: cover;
+    background-position: 0 0;
+    animation-name: decole;
+    animation-duration: 0.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+    animation-play-state: paused;
+}
+@keyframes decole {
+    from { background-position: 0 0; }
+    to { background-position: -400% 0; } 
+  }
+
+  /* -- img chapitre-1 -- */
+
+  #chapitre-1 .voiture {
+    position: absolute;
+    height: 25%;
+    bottom: 20%;
+    left: 5vw;
+  }
+  #chapitre-1 .route {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    object-fit:cover;
+  }
+  #chapitre-1 .mongolfiere {
+    position: absolute;
+    height: 35%;
+    bottom: -35%;
+    left: 65%
+  }
+  #chapitre-1 .nuage-1 {
+    position: absolute;
+    height: 18%;
+    top: 5%;
+    right: 10%;
+  }
+  #chapitre-1 .nuage-2 {
+    position: absolute;
+    height: 15%;
+    top: 20%;
+    right: 35%;
+  }
+  #chapitre-1 .nuage-3 {
+    position: absolute;
+    height: 20%;
+    top: 10%;
+    right: 70%;
+  }
+
+  /* -- img chapitre-2 -- */
+
+  #chapitre-2 .mongolfiere {
+    position: absolute;
+    height: 35%;
+    bottom: -35%;
+    left: 10%
+  }
+  #chapitre-2 .nuage-2 {
+    position: absolute;
+    height: 18%;
+    top: 5%;
+    right: 10%;
+  }
+  #chapitre-2 .nuage-3 {
+    position: absolute;
+    height: 15%;
+    top: 20%;
+    right: 35%;
+  }
+  #chapitre-2 .nuage-1 {
+    position: absolute;
+    height: 20%;
+    top: 10%;
+    right: 70%;
+  }
+
+  /* -- img chapitre-3 -- */
+
+  #chapitre-3 .mongolfiere {
+    position: absolute;
+    height: 35%;
+    bottom: 35%;
+    left: 25%;
+  }
+
+  /* -- img chapitre-4-5 -- */
+
+  #chapitre-4-5 .bateau {
+    position: absolute;
+    height: 60%;
+    bottom: 20%;
+    left: 25%;
+  }
+  #chapitre-4-5 .vague-1 {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+  }
+  #chapitre-4-5 .vague-2 {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+  }
+  #chapitre-4-5 .vague-3 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+  }
+  
+
+  /* -- img chapitre-6 -- */
+
+  #chapitre-6 .planete-1 {
+    position: absolute;
+    height: 50%;
+    bottom: 45%;
+    left: 45%
+  }
+  #chapitre-6 .planete-2 {
+    position: absolute;
+    height: 75%;
+    bottom: -23%;
+    left: -28%;
+  }
