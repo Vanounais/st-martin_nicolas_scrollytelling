@@ -11,5 +11,3 @@ window.addEventListener("scroll",() => {
     const body = document.querySelector("body")
     body.classList.add("is-scrolling");
 });
-
-document.write("coucou")
