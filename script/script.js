@@ -56,7 +56,7 @@ const chapt3 = gsap.timeline({
     }
 });
     chapt3
-    .to('#chapitre-3 .mongolfiere', {x: '200%', duration: 1})
+    .to('#chapitre-3 .mongolfiere', {x: '200%', duration: 2})
     .to('#chapitre-3 .mongolfiere', {y: '-2vh', x: '210%'})
     .to('#chapitre-3 .mongolfiere', {y: '1vh', x: '205%', ease: 'power1.inOut'})
     .to('#chapitre-3 .mongolfiere', {y: '-1vh', x: '215%', ease: 'power1.inOut'})
@@ -75,7 +75,7 @@ const chapt3 = gsap.timeline({
     });
         chapt4_5
         .to('#chapitre-4-5 .mongolfiere', { rotation: 20, duration: 0})
-        .to('#chapitre-4-5 .mongolfiere', {y: '150vh', x: '200%', rotation: 70})
+        .to('#chapitre-4-5 .mongolfiere', {y: '150vh', x: '200%', rotation: 90, duration: 1})
         .to('#chapitre-4-5 .vague-1', {y: '-50vh'},'<')
         .to('#chapitre-4-5 .vague-2', {y: '-35vh'},'<+0.2')
         .to('#chapitre-4-5 .vague-3', {y: '-20vh'},'<+0.2')
@@ -107,3 +107,29 @@ const chapt3 = gsap.timeline({
         .to('#chapitre-4-5 .sous-marins', {x: '100%', y: '5vh',rotation: 20, ease: 'power1.inOut'})
         .to('#chapitre-4-5 .sous-marins', {x: '200%', y: '90vh',rotation: 70, ease: 'power1.inOut', duration: 3})
         .to('#chapitre-4-5 .background', {y: '-300vh', ease: 'power1.inOut', duration: 3},"<")
+        .to('#chapitre-4-5 .bulle-1', {y: '-140vh', ease: 'power1.in', duration: 2},"<")
+        .to('#chapitre-4-5 .poisson-rouge', {y: '-40vh', x: '-600%', ease: 'power1.in', duration: 2},"<")
+        .to('#chapitre-4-5 .bulle-3', {y: '-140vh', ease: 'power1.in', duration: 2},"<0.5")
+        .to('#chapitre-4-5 .poisson-jaune', {y: '-40vh', x: '600%', ease: 'power1.in', duration: 2},"<")
+        .to('#chapitre-4-5 .bulle-2', {y: '-140vh', ease: 'power1.in', duration: 2},"<0.5")
+        .to('#chapitre-4-5 .poisson-vert', {y: '-40vh', x: '600%', ease: 'power1.in', duration: 2},"<")
+        
+
+        let hauteurTotale = document.querySelector("#chapitre-6").scrollHeight;
+        console.log(hauteurTotale)
+
+        const chapt6 = gsap.timeline({
+            scrollTrigger: {
+                pin: true,
+                scrub: 1,
+                markers: true,
+                start: 'top 0%',
+                end: 'bottom -300%',
+                trigger: '.chapt.no6',
+            }
+        });
+            chapt6
+            .to('#chapitre-6 .fusee', {rotate: 90, duration: 0},0)
+            .to('#chapitre-6 .planete-1', {x: hauteurTotale*-0.35})
+            .to('#chapitre-6 .planete-2', {x: hauteurTotale*-1.10},'<')
+            .to('#chapitre-6 .fusee', {x: "1250%", y: "15vh", rotate: 100, ease: "power1.inOut"},'<0.1')

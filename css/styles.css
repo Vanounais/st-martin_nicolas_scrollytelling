@@ -123,7 +123,6 @@ header div {
   }
 
   .sprite2 {
-    width: 25%;
     aspect-ratio: 9/16;
     background-image: url("../img/img_personnages/fusee-spritesheet.png");
     background-size: cover;
@@ -132,7 +131,6 @@ header div {
     animation-duration: 0.75s;
     animation-iteration-count: infinite;
     animation-timing-function: steps(4);
-    animation-play-state: paused;
 }
 @keyframes decole {
     from { background-position: 0 0; }
@@ -287,12 +285,47 @@ ul.technique-gsap li{
     width: 100%;
     bottom: -80%;
   }
-
   .sous-marins {
     position: absolute;
     width: 35%;
     bottom: 50%;
     left: -35%
+  }
+  .bulle-1 {
+    position: absolute;
+    width: 20%;
+    bottom: -40%;
+    left: 75%
+  }
+  .bulle-2 {
+    position: absolute;
+    width: 20%;
+    bottom: -40%;
+    left: 45%
+  }
+  .bulle-3 {
+    position: absolute;
+    width: 20%;
+    bottom: -40%;
+    left: 15%
+  }
+  .poisson-jaune {
+    position: absolute;
+    width: 20%;
+    bottom: 68%;
+    left: -20%
+  }
+  .poisson-rouge {
+    position: absolute;
+    width: 20%;
+    bottom: 38%;
+    left: 100%
+  }
+  .poisson-vert {
+    position: absolute;
+    width: 20%;
+    bottom: 0%;
+    left: -20%
   }
   
 
@@ -302,11 +335,17 @@ ul.technique-gsap li{
     position: absolute;
     height: 50%;
     bottom: 45%;
-    left: 45%
+    left: 70%
   }
   #chapitre-6 .planete-2 {
     position: absolute;
     height: 75%;
     bottom: -23%;
-    left: -28%;
+    left: 50%;
+  }
+  .fusee{
+    width: 10%;
+    position: absolute;
+    bottom: 40%;
+    left: -20%;
   }
