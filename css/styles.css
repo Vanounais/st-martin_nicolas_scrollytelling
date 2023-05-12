@@ -238,6 +238,11 @@ ul.technique-gsap li{
 
   /* -- img chapitre-4-5 -- */
 
+  #chapitre-4-5 .background {
+    position: absolute;
+    width: 100%;
+  }
+
   #chapitre-4-5 .mongolfiere {
     position: absolute;
     height: 35%;
