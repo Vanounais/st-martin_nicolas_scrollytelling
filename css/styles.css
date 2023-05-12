@@ -105,7 +105,7 @@ header div {
 .spritearray {
     height: 200vh;
 }
-
+/* -- sprite pluie -- */
 .sprite {
     width: 100%;
     aspect-ratio: 16/9;
@@ -122,7 +122,7 @@ header div {
     from { background-position: 0 0; }
     to { background-position: 800% 0; } 
   }
-
+/* -- sprite fusee -- */
   .sprite2 {
     aspect-ratio: 9/16;
     background-image: url("../img/img_personnages/fusee-spritesheet.png");
@@ -137,7 +137,7 @@ header div {
     from { background-position: 0 0; }
     to { background-position: -400% 0; } 
   }
-
+/* -- sprite sous-marins -- */
   .sprite3 {
     width: 25%;
     aspect-ratio: 16/9;
