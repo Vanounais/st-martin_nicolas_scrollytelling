@@ -1,5 +1,5 @@
 # Rapport d’optimisation du projet ScrollyTelling  
-[Page Speed Insights - Rapport du 12 mai 2023, 07:30:20](https://vanounais.github.io/st-martin_nicolas_scrollytelling/)  
+[Page Speed Insights - Rapport du 12 mai 2023, 07:30:20](https://pagespeed.web.dev/analysis/https-vanounais-github-io-st-martin_nicolas_scrollytelling/epyzsj19tr?form_factor=mobile)  
 ## Probleme #1
 ### Évitez d'énormes charges utiles de réseau
 Mes medias (img) sont trop volumineux donc quand vien le temps de charger la page elle prenne du temps a apparaitre.
@@ -23,3 +23,6 @@ J'ai oublier d'ajouter mes attributs [alt] sur mes images.
 Simplement ajouter l'attribut [alt].
 ### Resultat
 J'ai rajouter un  attribut [alt] avec une valeur dans chaque balise <img>.
+
+## Rapport projet ScrollyTelling après optimisation
+[Page Speed Insights - Rapport du 12 mai 2023, 13:24:15]([Page Speed Insights - Rapport du 12 mai 2023, 07:30:20](https://vanounais.github.io/st-martin_nicolas_scrollytelling/))
