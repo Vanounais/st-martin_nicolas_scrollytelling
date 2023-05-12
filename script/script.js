@@ -34,7 +34,6 @@ const chapt1 = gsap.timeline({
     scrollTrigger: {
         pin: true,
         scrub: 1,
-        markers: true,
         start: 'top 0%',
         end: 'bottom -200%',
         trigger: '.chapt.no1',
@@ -52,7 +51,6 @@ const chapt2 = gsap.timeline({
     scrollTrigger: {
         pin: true,
         scrub: 1,
-        markers: true,
         start: 'top 0%',
         end: 'bottom -100%',
         trigger: '.chapt.no2',
@@ -69,7 +67,6 @@ const chapt3 = gsap.timeline({
     scrollTrigger: {
         pin: true,
         scrub: 1,
-        markers: true,
         start: 'top 0%',
         end: 'bottom -200%',
         trigger: '.chapt.no3',
@@ -89,7 +86,6 @@ const chapt4_5 = gsap.timeline({
     scrollTrigger: {
         pin: true,
         scrub: 1,
-        markers: true,
         start: 'top 0%',
         end: 'bottom -300%',
         trigger: '.chapt.no4-5',
@@ -146,7 +142,6 @@ const chapt6 = gsap.timeline({
     scrollTrigger: {
         pin: true,
         scrub: 1,
-        markers: true,
         start: 'top 0%',
         end: 'bottom -300%',
         trigger: '.chapt.no6',
