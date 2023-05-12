@@ -1,4 +1,4 @@
-/* appel a l'action */
+/* ---- appel a l'action ---- */
 const appelAnim = gsap.timeline()
     .to('.fleche.trois', { opacity: "0", ease: "power2.inOut", duration: "1"}) 
     .to('.fleche.deux', { opacity: "0", ease: "power2.inOut", duration: "1"}, "-=0.6")
@@ -9,7 +9,7 @@ const appelAnim = gsap.timeline()
     .repeat(-1)
 
 
-/* scroll spritesheet */
+/* ---- scroll spritesheet ---- */
 let isScrolling
 window.addEventListener("scroll",() => {
     const body = document.querySelector("body")
@@ -29,7 +29,7 @@ let scrollend = gsap.to('chapt.no4-5', {
 
 gsap.registerPlugin(ScrollTrigger);
 
-/* chapitre 1 */
+/* ---- chapitre 1 ---- */
 const chapt1 = gsap.timeline({
     scrollTrigger: {
         pin: true,
@@ -47,7 +47,7 @@ const chapt1 = gsap.timeline({
     .to('#chapitre-1 .voiture', {rotation: 180},"<")
     .to('#chapitre-1 .mongolfiere', {y: '-150vh',x: '-80%'})
 
-/* chapitre 2 */
+/* ---- chapitre 2 ---- */
 const chapt2 = gsap.timeline({
     scrollTrigger: {
         pin: true,
@@ -64,7 +64,7 @@ const chapt2 = gsap.timeline({
     .to('#chapitre-2 .mongolfiere', {x: '500%', ease: 'power2.inOut', duration: 2})
     .to('#chapitre-2 .nuages', {x: '-100%', duration: 2},"0")
         
-/* chapitre 3 */
+/* ---- chapitre ---- 3 */
 const chapt3 = gsap.timeline({
     scrollTrigger: {
         pin: true,
@@ -84,7 +84,7 @@ const chapt3 = gsap.timeline({
     .to('#chapitre-3 .mongolfiere', {y: '-3vh', x: '207%', ease: 'power1.inOut'})
     .to('#chapitre-3 .mongolfiere', {y: '70vh', x: '300%', rotation: 50, ease: 'power2.in', duration: 1})
 
-/* chapitre 4-5 */
+/* ---- chapitre 4-5 ---- */
 const chapt4_5 = gsap.timeline({
     scrollTrigger: {
         pin: true,
@@ -139,7 +139,7 @@ const chapt4_5 = gsap.timeline({
     .to('#chapitre-4-5 .bulle-2', {y: '-140vh', ease: 'power1.in', duration: 2},"<0.5")
     .to('#chapitre-4-5 .poisson-vert', {y: '-40vh', x: '600%', ease: 'power1.in', duration: 2},"<")
         
-/* chapitre 6 */
+/* ---- chapitre 6 ---- */
 let hauteurTotale = document.querySelector("#chapitre-6").scrollWidth;
 console.log(hauteurTotale)
 const chapt6 = gsap.timeline({
