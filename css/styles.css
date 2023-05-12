@@ -139,6 +139,22 @@ header div {
     to { background-position: -400% 0; } 
   }
 
+  .sprite3 {
+    width: 25%;
+    aspect-ratio: 16/9;
+    background-image: url("../img/img_personnages/sous-marin_sprite.png");
+    background-size: cover;
+    background-position: 0 0;
+    animation-name: plongee;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(8);
+}
+@keyframes plongee {
+    from { background-position: 0 0; }
+    to { background-position: -800% 0; } 
+  }
+
   ul.technique-gsap{
     background: rgba(0,0,0,0.3);
     color: white;
@@ -270,6 +286,13 @@ ul.technique-gsap li{
     position: absolute;
     width: 100%;
     bottom: -80%;
+  }
+
+  .sous-marins {
+    position: absolute;
+    width: 35%;
+    bottom: 50%;
+    left: -35%
   }
   
 

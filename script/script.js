@@ -104,3 +104,6 @@ const chapt3 = gsap.timeline({
         .to('#chapitre-4-5 .vague-1', {y: '-201vh', ease: 'power1.inOut'},'<')
         .to('#chapitre-4-5 .vague-2', {y: '-185vh', ease: 'power1.inOut'},'<')
         .to('#chapitre-4-5 .vague-3', {y: '-169vh', ease: 'power1.inOut'},'<')
+        .to('#chapitre-4-5 .sous-marins', {x: '100%', y: '5vh',rotation: 20, ease: 'power1.inOut'})
+        .to('#chapitre-4-5 .sous-marins', {x: '200%', y: '90vh',rotation: 70, ease: 'power1.inOut', duration: 3})
+        .to('#chapitre-4-5 .background', {y: '-300vh', ease: 'power1.inOut', duration: 3},"<")
