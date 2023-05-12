@@ -139,13 +139,34 @@ header div {
     to { background-position: -400% 0; } 
   }
 
+  ul.technique-gsap{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px 12px 20px;
+    margin: 0;
+    max-width: 300px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+ul.technique-gsap li{
+    margin: 5px 0;
+}
+
   /* -- img chapitre-1 -- */
 
   #chapitre-1 .voiture {
     position: absolute;
     height: 25%;
     bottom: 20%;
-    left: 5vw;
+    left: -15%;
   }
   #chapitre-1 .route {
     position: absolute;
@@ -212,31 +233,38 @@ header div {
     position: absolute;
     height: 35%;
     bottom: 35%;
-    left: 25%;
+    left: -20%;
   }
 
   /* -- img chapitre-4-5 -- */
 
+  #chapitre-4-5 .mongolfiere {
+    position: absolute;
+    height: 35%;
+    top: -35%;
+    left: 25%;
+  }
+
   #chapitre-4-5 .bateau {
     position: absolute;
     height: 60%;
-    bottom: 20%;
+    bottom: -60%;
     left: 25%;
   }
   #chapitre-4-5 .vague-1 {
     position: absolute;
     width: 100%;
-    top: 20%;
+    bottom: -80%;
   }
   #chapitre-4-5 .vague-2 {
     position: absolute;
     width: 100%;
-    top: 35%;
+    bottom: -80%;
   }
   #chapitre-4-5 .vague-3 {
     position: absolute;
     width: 100%;
-    top: 50%;
+    bottom: -80%;
   }
   
 
